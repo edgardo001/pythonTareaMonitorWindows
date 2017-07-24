@@ -1,0 +1,18 @@
+Instalar python 3.6 o superior
+	verificar que python este en el Path del sistema (y tambien en el del usuario)
+	
+	%Python_HOME%\Python36-32
+	%Python_HOME%\Python36-32\Scripts\
+	NOTA: Si no funciona despues de crear las variables, se debe reiniciar, ya que las variables del sistema se cargan en el inicio
+
+
+Ejecutar pip (Administrador de paquetes de Python) e instalar:
+	pip install pyodbc
+	pip install smtplib //Solo si es necesario, viene instalada por defecto en python 3.6
+	pip install configparser o pip install ConfigParser //Solo si es necesario, viene instalada por defecto en python 3.6
+
+Modificar "pythonSqlServer.ini" segun la necesidad del correo (Probado con gmail) y de la base de datos SQLSERVER (Probado con SqlServer 2016)
+
+Crear la tarea con (Se puede editar el .bat para cambiar algunos parametros al crear la tarea):
+	crearServicio.bat
+	
